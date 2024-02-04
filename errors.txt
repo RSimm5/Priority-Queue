@@ -1,0 +1,81 @@
+In file included from ./tests/test07.cpp:10:
+./tests/priorityqueue.h: In instantiation of ‘bool priorityqueue<T>::operator==(const priorityqueue<T>&) const [with T = int]’:
+./tests/test07.cpp:44:5:   required from here
+./tests/priorityqueue.h:484:26: error: passing ‘const priorityqueue<int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  484 |         if( equalityCheck(root, other.root) && size == other.size ) {
+      |             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+./tests/priorityqueue.h:119:10: note:   in call to ‘bool priorityqueue<T>::equalityCheck(priorityqueue<T>::NODE*, priorityqueue<T>::NODE*) [with T = int]’
+  119 |     bool equalityCheck(NODE* node, NODE* node2) {
+      |          ^~~~~~~~~~~~~
+./tests/priorityqueue.h: In instantiation of ‘bool priorityqueue<T>::operator==(const priorityqueue<T>&) const [with T = std::__cxx11::basic_string<char>]’:
+./tests/test07.cpp:66:5:   required from here
+./tests/priorityqueue.h:484:26: error: passing ‘const priorityqueue<std::__cxx11::basic_string<char> >’ as ‘this’ argument discards qualifiers [-fpermissive]
+  484 |         if( equalityCheck(root, other.root) && size == other.size ) {
+      |             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+./tests/priorityqueue.h:119:10: note:   in call to ‘bool priorityqueue<T>::equalityCheck(priorityqueue<T>::NODE*, priorityqueue<T>::NODE*) [with T = std::__cxx11::basic_string<char>]’
+  119 |     bool equalityCheck(NODE* node, NODE* node2) {
+      |          ^~~~~~~~~~~~~
+./tests/priorityqueue.h: In instantiation of ‘bool priorityqueue<T>::operator==(const priorityqueue<T>&) const [with T = char]’:
+./tests/test07.cpp:114:5:   required from here
+./tests/priorityqueue.h:484:26: error: passing ‘const priorityqueue<char>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  484 |         if( equalityCheck(root, other.root) && size == other.size ) {
+      |             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+./tests/priorityqueue.h:119:10: note:   in call to ‘bool priorityqueue<T>::equalityCheck(priorityqueue<T>::NODE*, priorityqueue<T>::NODE*) [with T = char]’
+  119 |     bool equalityCheck(NODE* node, NODE* node2) {
+      |          ^~~~~~~~~~~~~
+In file included from ./tests/test08.cpp:10:
+./tests/priorityqueue.h: In instantiation of ‘bool priorityqueue<T>::operator==(const priorityqueue<T>&) const [with T = int]’:
+./tests/test08.cpp:88:5:   required from here
+./tests/priorityqueue.h:484:26: error: passing ‘const priorityqueue<int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  484 |         if( equalityCheck(root, other.root) && size == other.size ) {
+      |             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+./tests/priorityqueue.h:119:10: note:   in call to ‘bool priorityqueue<T>::equalityCheck(priorityqueue<T>::NODE*, priorityqueue<T>::NODE*) [with T = int]’
+  119 |     bool equalityCheck(NODE* node, NODE* node2) {
+      |          ^~~~~~~~~~~~~
+ 
+ 
+ 
+ 
+********************************************************************
+** VALGRIND check **
+ 
+ 
+In file included from ./valgrind_tests/test01.cpp:11:
+./valgrind_tests/priorityqueue.h: In instantiation of ‘bool priorityqueue<T>::operator==(const priorityqueue<T>&) const [with T = std::__cxx11::basic_string<char>]’:
+./valgrind_tests/test01.cpp:62:9:   required from here
+./valgrind_tests/priorityqueue.h:484:26: error: passing ‘const priorityqueue<std::__cxx11::basic_string<char> >’ as ‘this’ argument discards qualifiers [-fpermissive]
+  484 |         if( equalityCheck(root, other.root) && size == other.size ) {
+      |             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+./valgrind_tests/priorityqueue.h:119:10: note:   in call to ‘bool priorityqueue<T>::equalityCheck(priorityqueue<T>::NODE*, priorityqueue<T>::NODE*) [with T = std::__cxx11::basic_string<char>]’
+  119 |     bool equalityCheck(NODE* node, NODE* node2) {
+      |          ^~~~~~~~~~~~~
+./valgrind_tests/priorityqueue.h: In instantiation of ‘bool priorityqueue<T>::operator==(const priorityqueue<T>&) const [with T = int]’:
+./valgrind_tests/test01.cpp:106:9:   required from here
+./valgrind_tests/priorityqueue.h:484:26: error: passing ‘const priorityqueue<int>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  484 |         if( equalityCheck(root, other.root) && size == other.size ) {
+      |             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+./valgrind_tests/priorityqueue.h:119:10: note:   in call to ‘bool priorityqueue<T>::equalityCheck(priorityqueue<T>::NODE*, priorityqueue<T>::NODE*) [with T = int]’
+  119 |     bool equalityCheck(NODE* node, NODE* node2) {
+      |          ^~~~~~~~~~~~~
+./valgrind_tests/priorityqueue.h: In instantiation of ‘bool priorityqueue<T>::operator==(const priorityqueue<T>&) const [with T = double]’:
+./valgrind_tests/test01.cpp:127:9:   required from here
+./valgrind_tests/priorityqueue.h:484:26: error: passing ‘const priorityqueue<double>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  484 |         if( equalityCheck(root, other.root) && size == other.size ) {
+      |             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+./valgrind_tests/priorityqueue.h:119:10: note:   in call to ‘bool priorityqueue<T>::equalityCheck(priorityqueue<T>::NODE*, priorityqueue<T>::NODE*) [with T = double]’
+  119 |     bool equalityCheck(NODE* node, NODE* node2) {
+      |          ^~~~~~~~~~~~~
+./valgrind_tests/priorityqueue.h: In instantiation of ‘bool priorityqueue<T>::operator==(const priorityqueue<T>&) const [with T = char]’:
+./valgrind_tests/test01.cpp:417:9:   required from here
+./valgrind_tests/priorityqueue.h:484:26: error: passing ‘const priorityqueue<char>’ as ‘this’ argument discards qualifiers [-fpermissive]
+  484 |         if( equalityCheck(root, other.root) && size == other.size ) {
+      |             ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+./valgrind_tests/priorityqueue.h:119:10: note:   in call to ‘bool priorityqueue<T>::equalityCheck(priorityqueue<T>::NODE*, priorityqueue<T>::NODE*) [with T = char]’
+  119 |     bool equalityCheck(NODE* node, NODE* node2) {
+      |          ^~~~~~~~~~~~~
+ 
+ 
+** FAILED TO COMPILE valgrind tests, ignore... 
+ 
+ 
+********************************************************************
